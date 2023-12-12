@@ -7,7 +7,7 @@ Pensando na organização, foi-se usado uma estrutura de dados do tipo Lista par
 
 cada paciente recebe nome, cpf, idade, id, patologia (identificador da doença e a gravidade dela), e os horários dos acontecimentos no hospital, assim como o hospital tem suas salas (raio-x e laudo), das quais possuem identificadores de se está vazia,  tempo da consulta e o id do paciente. dessa forma, é possivel organizar a fila de atendimento da qual é usada e atualizada para receber os pacientes mais prioritários (por ordem de gravidade da patologia).
 
-A cada iteração do código, é chamado de unidade de tempo, da qual é usada para estabelecer quanto tempo irá durar a simulação, assim como o id do paciente. Pensando em analizar por esse modelo, foi pensado em a cada 10 unidade de tempo, seja printado na tela as métricas (tempo médio para se tirar um laudo, média por patologia e quantidade de exames realizados após o limite de tempo), com um intervalo de 0,5 segundos para melhor visualização do que está ocorrendo. 
+A cada iteração do código, é chamado de unidade de tempo, da qual é usada para estabelecer quanto tempo irá durar a simulação, assim como o id do paciente. Pensando em analizar por esse modelo, foi pensado em a cada 10 unidade de tempo, seja printado na tela as métricas (tempo médio para se tirar um laudo, média por patologia e quantidade de exames realizados após o limite de tempo), com um intervalo dado pelo usuário no inicio do programa (em micro-segundos) para melhor visualização do que está ocorrendo nas métricas. 
 
 para executar o programa (no linux ubuntu 22.04 com GCC 11), digite make na linha de comando, seguida por ./main, dessa forma o programa será executado
 
