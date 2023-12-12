@@ -12,6 +12,9 @@ int main(){
   Hospital *hospital = inicia_Hospital();//estrutura que controla os equipamentos e funcionários do hospital
   Log *logging = cria_log();//estrutura que guarda as informações dos pacientes para coloca-los em um arquivo
   srand(time(NULL));
+  int tempo;
+  printf("Digite qual o tempo de pausa do programa em micro segundos (1 segundo = 1.000.000 micro-segundos):\n");
+  scanf("%d", &tempo);
   
   for(int Unidade_de_tempo = 1;Unidade_de_tempo<43201;Unidade_de_tempo++){
     
@@ -32,7 +35,7 @@ int main(){
       //função que printa as médias de tempo
       printa_metrica(lista_controle, hospital);
       //faz esperar 0,5 segundos
-      usleep(500000);
+      usleep(tempo);
     }
   }
 
